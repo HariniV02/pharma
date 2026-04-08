@@ -1,0 +1,53 @@
+"state_id","state_abbrev","state_name","sales_tax_rate","regulatory_tier"
+2646,AL,Alabama,"4.0%",1
+8269,,Alaska,"0.0%",1
+3725,AZ,Arizona,"5.6%",3
+5906,AR,Arkansas,"6.5%",2
+1474,CA,California,,1
+1753,CO,Colorado,"2.9%",3
+6314,CT,Connecticut,"6.3%",3
+1919,DE,Delaware,,2
+5806,FL,Florida ,"6.0%",3
+6873,GA,Georgia,"400.0%",1
+7141,HI,Hawaii,"4.0%",1
+8056,ID,Idaho,"6.0%",2
+3385,IL,Ilinois,"6.3%",3
+5000,IN,Indiana,"7.0%",3
+9702,IA,Iowa,,2
+7751,KS,Kansas,,3
+3950,KY,Kentucky,"6.0%",3
+3785,LA,Louisiana,"4.5%",3
+3868,ME,Maine,"5.5%",3
+2293,MD,Maryland,"6.0%",2
+7267,MA,Massachusetts,"6.3%",2
+4945,MI,Michigan,"6.0%",2
+9153,MN,Minnesota,"6.9%",3
+3344,MS,Mississippi,"7.0%",3
+4804,MO,Missouri,"4.2%",1
+8555,MT,Montana,"0.0%",2
+5161,NE,Nebraska,"5.5%",2
+8529,NV,Nevada,"6.9%",2
+5183,NH,New hampshire,,3
+1153,NJ,New jersey,"6.6%",1
+8622,NM,New mexico,"510.0%",1
+5712,NY,New york,"4.0%",2
+9955,NC,North carolina,"4.8%",1
+3588,ND,North dakota,"500.0%",2
+2210,,Ohio,"5.8%",2
+8237,OK,Oklahoma,"4.5%",2
+6661,OR,Oregon,"0.0%",2
+5901,PA,Pennsylvania,"6.0%",2
+7951,RI,Rhode island,"7.0%",2
+5097,SC,South carolina,"6.0%",2
+8484,SD,South dakota,"4.5%",1
+5949,,Tennessee,"7.0%",2
+4263,,Texas,"6.3%",3
+7302,UT,Utah,"6.1%",2
+8916,VT,Vermont,"0.0%",3
+2747,,Virginia,"530.0%",2
+4886,WA,Washington,"6.5%",2
+7248,WV,West virginia,"6.0%",2
+6881,WI,Wisconsin,"500.0%",2
+5847,WY,Wyoming,"4.0%",3
+3588,ND,North dakota,"500.0%",2
+8484,SD,South dakota,"4.5%",1
