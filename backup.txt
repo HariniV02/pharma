@@ -1,0 +1,45 @@
+backup 
+
+
+## Checking for gaps in the data 
+
+# null counts per column 
+print("===== NULL COUNT =====")
+print(combined.isnull().sum().to_string())
+    # to.string removes the dtype at the end of the output
+
+# null counts per column percentage
+print('\n===== NULL COUNT % =====')
+print((combined.isnull().sum() / len(combined) * 100).round(2).to_string())
+
+# Total duplicate rows
+print("\n===== DUPLICATE ROWS =====")
+print(combined.duplicated().sum())
+
+
+# Orders that couldn't be linked to a valid state or payment
+print("\n===== UNLINKED ORDERS =====")
+print("Missing state:", combined['state_name'].isnull().sum())
+print("Missing payment:", combined['payment_method'].isnull().sum())
+
+# Visualize null rates as a heatmap
+null_pct = (combined.isnull().sum() / len(combined) * 100).round(2)
+    # all the null values per column as a percentage
+null_pct = null_pct[null_pct > 0].sort_values(ascending=False)
+    # removes the columns with no null values 
+
+plt.figure(figsize=(12, 6))
+sb.barplot(x=null_pct.index, y=null_pct.values, color='steelblue')
+    # x is column names y is values
+plt.title('Null Value % by Column')
+plt.xlabel('Column')
+plt.ylabel('Null %')
+plt.xticks(rotation=45, ha='right')
+    #rotates column names to prevent overlap
+plt.tight_layout()
+plt.savefig('null_barchart.png')
+plt.show()
+
+
+
+
