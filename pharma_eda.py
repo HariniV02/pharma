@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # ── LOAD DATA ─────────────────────────────────────────────────────────
-combined = pd.read_csv('pharma_combined.csv')
+combined = pd.read_csv('cleandata/pharma_combined.csv')
 
 # Data prep
 combined['unit_price_usd'] = pd.to_numeric(combined['unit_price_usd'], errors='coerce')
@@ -180,23 +180,21 @@ plt.show()
 
 # ══════════════════════════════════════════════════════════════════════
 # 5. ORDER FULFILMENT ANALYSIS
-# Business question: Where are we losing orders?
+# Business question: Where are we losing orders and is there a pattern?
 # ══════════════════════════════════════════════════════════════════════
 
 status_counts = combined['order_status'].value_counts()
-cancel_rate   = combined[combined['order_status'] == 'Cancelled'].shape[0] / len(combined) * 100
-# shape[0] gives the row count of the filtered dataframe
+cancel_rate   = combined[combined['order_status'] == 'Canceled'].shape[0] / len(combined) * 100
 print(f"\n=== FULFILMENT SUMMARY ===")
 print(f"Cancellation Rate: {cancel_rate:.1f}%")
 
-# Cancellations by state — identifies if problem is regional
-cancel_by_state = combined[combined['order_status'] == 'Cancelled']\
+# Cancellations by state
+cancel_by_state = combined[combined['order_status'] == 'Canceled']\
     .groupby('state_name')['order_id'].count()\
     .sort_values(ascending=False).head(10)
-# The \ lets you continue code on the next line for readability
 
 # Cancellations by drug
-cancel_by_drug = combined[combined['order_status'] == 'Cancelled']\
+cancel_by_drug = combined[combined['order_status'] == 'Canceled']\
     .groupby('drug')['order_id'].count()\
     .sort_values(ascending=False).head(10)
 
@@ -211,11 +209,15 @@ ax1.set_xlabel('Number of Orders')
 
 # Cancellations by state
 sns.barplot(x=cancel_by_state.values, y=cancel_by_state.index, color='salmon', ax=ax2)
+for i, v in enumerate(cancel_by_state.values):
+    ax2.text(v, i, f' {v:,.0f}', va='center')
 ax2.set_title('Top 10 States by Cancellations')
 ax2.set_xlabel('Cancelled Orders')
 
 # Cancellations by drug
 sns.barplot(x=cancel_by_drug.values, y=cancel_by_drug.index, color='salmon', ax=ax3)
+for i, v in enumerate(cancel_by_drug.values):
+    ax3.text(v, i, f' {v:,.0f}', va='center')
 ax3.set_title('Top 10 Drugs by Cancellations')
 ax3.set_xlabel('Cancelled Orders')
 
