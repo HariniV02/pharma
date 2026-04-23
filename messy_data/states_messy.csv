@@ -1,0 +1,53 @@
+state_id,state_abbrev,state_name,sales_tax_rate,regulatory_tier
+2646,AL,Alabama,0.04,1
+8269,,Alaska,0.0%,1
+3725,AZ,Arizona,0.056,3
+5906,AR,Arkansas,0.065,2
+1474,CA,california,,1
+1753,CO,Colorado,0.029,3
+6314,CT,Connecticut,0.0635,3
+1919,DE,Delaware,-0.05,2
+5806,FL,Florida ,0.06,3
+6873,GA,Georgia,4.0%,1
+7141,hi,Hawaii,0.04,1
+8056,ID,Idaho,0.06,2
+3385,il,Ilinois,0.0625,3
+5000,IN,Indiana,0.07,3
+9702,IA,Iowa,,2
+7751,KS,Kansas,-0.05,3
+3950,KY,Kentucky,0.06,3
+3785,LA,Louisiana,0.0445,3
+3868,ME,Maine,0.055,3
+2293,MD,Maryland,0.06,2
+7267,MA,Massachusetts,0.0625,2
+4945,MI,Michigan,0.06,2
+9153,MN,Minnesota,0.06875,3
+3344,MS,Mississippi,0.07,3
+4804,mo,Missouri,0.04225,1
+8555,MT,Montana,0.0,2
+5161,NE,Nebraska,0.055,2
+8529,NV,Nevada,0.0685,2
+5183,NH,New Hampshire,,3
+1153,NJ,New Jersey,0.0663,1
+8622,NM,New Mexico,5.1%,1
+5712,NY,NEW YORK,0.04,2
+9955,NC,North Carolina,0.0475,1
+3588,ND,North Dakota,5.0%,2
+2210,,Ohio,0.0575,2
+8237,OK,Oklahoma,0.045,2
+6661,OR,Oregon,0.0,2
+5901,PA,Pennsylvania,0.06,2
+7951,RI,Rhode Island,0.07,2
+5097,SC,South Carolina,0.06,2
+8484,SD,South Dakota,0.045,1
+5949,,Tennessee,0.07,2
+4263,,texas,0.0625,3
+7302,UT,Utah,0.061,2
+8916,VT,Vermont,0.0,3
+2747,,Virginia,5.3%,2
+4886,WA,Washington,0.065,2
+7248,WV,West Virginia,0.06,2
+6881,WI,Wisconsin,5.0%,2
+5847,WY,Wyoming,0.04,3
+3588,ND,North Dakota,5.0%,2
+8484,SD,South Dakota,0.045,1
