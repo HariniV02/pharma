@@ -1,17 +1,17 @@
 # Pharma Sales Data Analysis
 
 ## Project Overview
-This project simulates a real-world business analyst workflow — from raw, messy data through to actionable business insights. Using a synthetic pharmaceutical sales dataset, I performed end-to-end data cleaning in SQL and exploratory data analysis in Python to answer key strategic questions around revenue performance, market geography, payment risk, and operational efficiency.
+This project simulates a real-world business analyst workflow from raw, messy data through to actionable business insights. Using a synthetic pharmaceutical sales dataset, I performed end-to-end data cleaning in SQL and exploratory data analysis in Python to answer key strategic questions around revenue performance, market geography, payment risk, and operational efficiency.
 
 ---
 
 ## Business Questions Answered
-- What is our total revenue and how is it trending month over month?
-- Which drugs are driving the most revenue vs the most order volume — and are they the same?
-- Which states represent our biggest markets and where are the untapped opportunities?
-- What is our collections risk from missing or incomplete payment data?
-- Where are we losing orders and is there a pattern to cancellations?
-- Are we over-exposed in high regulatory risk states and what revenue is at stake?
+- What is the total revenue and how is it trending month over month?
+- Which drugs are driving the most revenue vs the most order volume and are they the same?
+- Which states represent the biggest markets and where are the untapped opportunities?
+- What is the collections risk from missing or incomplete payment data?
+- Where is the company losing orders and is there a pattern to cancellations?
+- Is the company over-exposed in high regulatory risk states and what revenue is at stake?
 
 ---
 
