@@ -140,6 +140,7 @@ Before analysis, a completeness audit was performed across all columns. Key find
 ---
 
 ## Repository Structure
+```
 pharma/
 ├── pharma_eda.py                   # Full EDA script
 ├── README.md                       # Project documentation
@@ -162,6 +163,8 @@ pharma/
     ├── payment_analysis.png        # Payment method breakdown
     ├── fulfilment_analysis.png     # Order status and cancellations
     └── regulatory_risk.png         # Revenue by regulatory tier
+
+```
 
 ---
 
