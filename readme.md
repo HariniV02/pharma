@@ -145,13 +145,19 @@ pharma/
 ├── pharma_eda.py                   # Full EDA script
 ├── README.md                       # Project documentation
 │
-├── cleandata/
+├── clean_data/
 │   ├── orders_clean.csv            # Cleaned orders table
 │   ├── payments_clean.csv          # Cleaned payments table
 │   ├── states_clean.csv            # Cleaned states table
 │   └── pharma_combined.csv         # Final merged analysis table
 │
-├── messydata/
+├── sql_code/
+│   ├── clean_orders_messy.sql      # Cleaning orders data
+│   ├── clean_payments_messy.sql    # Cleaning payments data
+│   ├── clean_states_messy.sql      # Cleaning states data
+│   └── combine.sql                 # Merging all tables
+│
+├── messy_data/
 │   ├── orders_messy.csv            # Raw messy orders table
 │   ├── payments_messy.csv          # Raw messy payments table
 │   └── states_messy.csv            # Raw messy states table
